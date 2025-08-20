@@ -305,6 +305,7 @@ button.mfp-arrow:hover {
 background-color: #00387a;
 color: white;
 padding: 10px;
+width: 100%;
 
 }
 /* content at start */
@@ -5552,7 +5553,7 @@ background: linear-gradient(rgba(5, 83, 167, 0.8), rgba(205, 227, 252, 0.8)),
 .bl-courses-list .item-course {
     height: 100%;
     overflow: hidden;
-    display: flex;
+    display: fle;
     flex-direction: column;
     transition: all .3s;
 }
@@ -13157,7 +13158,7 @@ background: linear-gradient(rgba(5, 83, 167, 0.8), rgba(205, 227, 252, 0.8)),
 }
 .why-we-start-content{
     background-color: #b2c9e166;
-    padding: 80px;
+    padding: 30px;
     color: #00387a;
     border-radius: 20px;
 }

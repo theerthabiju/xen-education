@@ -1,45 +1,5 @@
 @charset "UTF-8";
-/*------------------------------------------------------------------
-Project:  TutorX
-Version:  1.0
-Last change:  
-Assigned to:  
-Primary use:  
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
 
-* body
-  + Header / header
-  + Content
-        - Section Layouts / div .name-section
-        - Sidebar / .element-sidebar
-            - Search / .widget_search
-            - Categories / .widget_categories
-            - Post / .hun-widget-posts
-            - Tag / .widget_tag_cloud
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color   :  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.75 Raleway, Poppins, Open Sans, Arial, sans-serif;
-Title           : 39px/1.2 Raleway, Poppins, Open Sans, Arial, sans-serif;
-Paragrap        : 16px/1.75 Raleway, Poppins, Open Sans, Arial, sans-serif;
-Input, textarea : 16px/1.75 Raleway, Poppins, Open Sans, Arial, sans-serif;
--------------------------------------------------------------------*/
-/*
- * Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
- * Extend */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap");

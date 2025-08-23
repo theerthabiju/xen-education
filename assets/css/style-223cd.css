@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap");
 
+
 *,
 *:before,
 *:after {
@@ -17,7 +18,8 @@
 
 body,
 html {
-  font-family: Arial, sans-serif;
+  font-family:  "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
@@ -390,7 +392,7 @@ button.mfp-arrow:hover {
 
 
 body {
-  font-family: Open Sans;
+  font-family:"Poppins", sans-serif;
 }
 
 @keyframes toBottomFromTop {
@@ -8970,7 +8972,6 @@ justify-content:space-evenly !important;
  *
 \*/
 .site-header.layout-1 .element-login-popup.layout-1 .login-links a {
-  color: #fff;
   padding: 0;
   margin-left: 13px;
   margin-right: auto;
@@ -8986,14 +8987,14 @@ justify-content:space-evenly !important;
  *
 \*/
 .site-header.layout-2 .element-login-popup.layout-1 .login-links a {
-  color: #fff;
+  color: #00387a;
   padding: 0;
-  margin-left: 13px;
+  font-weight: 500;
   margin-right: auto;
 }
 
 .site-header.layout-2 .element-login-popup.layout-1 .login-links a:hover {
-  color: #a2cdff;
+  font-weight: 700;
 }
 
 /*\
@@ -10021,20 +10022,29 @@ justify-content:space-evenly !important;
 .element-heading.layout-2.align-left {
   text-align: left;
 }
-
+.element-heading.layout-2.align-left .title
+{
+  word-break: break-word;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  font-size: 38px;
+}
 .element-heading.layout-2.align-left .subtitle,
-.element-heading.layout-2.align-left .title,
 .element-heading.layout-2.align-left .description {
   word-break: break-word;
   text-align: left;
   margin-left: 0;
   margin-right: auto;
+  font-size: 15px;
 }
 
 .element-heading.layout-2.align-right {
   text-align: right;
 }
-
+.element-heading.layout-2.align-center .title{
+font-size: 38PX;
+}
 .element-heading.layout-2.align-right .subtitle,
 .element-heading.layout-2.align-right .title,
 .element-heading.layout-2.align-right .description {
@@ -10049,7 +10059,6 @@ justify-content:space-evenly !important;
 }
 
 .element-heading.layout-2.align-center .subtitle,
-.element-heading.layout-2.align-center .title,
 .element-heading.layout-2.align-center .description {
   word-break: break-word;
   text-align: center;
@@ -10645,7 +10654,7 @@ justify-content:space-evenly !important;
 \*/
 .element-button.layout-1 .button {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.5;
   color: #003a78;
   text-transform: uppercase;
@@ -12107,7 +12116,7 @@ justify-content:space-evenly !important;
 
 .element-testimonial.layout-1 .slide-testimonial .testimonial-item .content {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.777777;
   color: #fff;
   word-break: break-word;
@@ -12306,7 +12315,7 @@ justify-content:space-evenly !important;
   .testimonial-item
   .content {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.8;
   color: #363636;
   margin-bottom: 30px;
@@ -15139,7 +15148,7 @@ justify-content:space-evenly !important;
 
 .sec-about-12 .text-sec p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.777777;
   color: #363636;
   word-break: break-word;

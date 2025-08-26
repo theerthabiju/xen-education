@@ -1239,8 +1239,9 @@ justify-content:space-evenly !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 15px;
+  padding: 160px 15px;
   margin-bottom: 80px;
+  background-color: #f0f6fcf6;
 }
 
 .infographic {
@@ -1436,6 +1437,10 @@ justify-content:space-evenly !important;
 .opportinity-text{
   font-size: 46px;
 }
+.opportinity-col{
+  border-left: 1px solid;
+
+}
 .designation{
   font-size: 58px;
   color: #004e97;
@@ -1445,7 +1450,9 @@ justify-content:space-evenly !important;
   display: flex;
   justify-content: center;
 }
-
+.opportinity-row{
+  margin-top: 50px;
+}
 .mobile-menu-container .menu {
   padding-left: 15px;
   border-left: 1px solid #666666;

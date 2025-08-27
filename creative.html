@@ -662,12 +662,11 @@
         </div>
       </section>
       <!-- opportunity list -->
-      <section class="creative-section4">
-        <div class="container creative-section4">
+      <section class="creative-section04">
+        <div class="container">
           <div>
             <h1>Opportunities are Unlimited</h1>
             <div class="task-container">
-
               <div class="task">
                 <div class="toggle"><div class="circle-toggle"></div></div>
                 Graphic Designer
@@ -1020,6 +1019,85 @@
           </div>
         </div>
       </section>
+<!-- different -->
+      <section class="creative-section7">
+        <div class="Different container">
+          <div class="row">
+            <div class="col-md-6 creative-section-col">
+              <h1>What Makes Us Different</h1>
+              <h5>Why Should You Learn Creative Designing</h5>
+              <img
+                class="diiferent-img img-responsive"
+                src="assets/images/home/cc2bg.png"
+                alt="C1"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="main-diiferents">
+                <div class="md-1">
+                  <h6 id="practical-heading" style="cursor: pointer">
+                    Practical Learning
+                  </h6>
+                  <p id="practical-text" style="display: none">
+                    We prioritize practical learning as the core of our
+                    approach. We go beyond theory, providing hands-on
+                    experiences that empower our students to apply their
+                    knowledge in real-world scenarios.
+                  </p>
+                </div>
+                <div class="md-1">
+                  <h6>Daily Exams</h6>
+                  <p style="display: none">
+                    Xen Education, the best Creative design institute in
+                    Wayanad, bridges the gap between learning and practice
+                    through daily exams. Our students take theoretical and
+                    practical exams daily to enhance their academic excellence.
+                  </p>
+                </div>
+                <div class="md-1">
+                  <h6>Working For Real Clients</h6>
+                  <p style="display: none">
+                    One of the key elements that sets Xen Education apart is our
+                    commitment to students by providing an opportunity to work
+                    with real clients. They can actively participate in projects
+                    that involve genuine client work.
+                  </p>
+                </div>
+                <div class="md-1">
+                  <h6>Placement Assistance</h6>
+                  <p style="display: none">
+                    At Xen Education, our commitment extends beyond training;
+                    we're dedicated to launching our students' careers. Our 100%
+                    placement assistance program includes mock interviews,
+                    resume preparation, and industry connections to ensure
+                    you're well-prepared for success.
+                  </p>
+                </div>
+                <div class="md-1">
+                  <h6>Internship Opportunity</h6>
+                  <p style="display: none">
+                    Xen Education provides a two-month internship program where
+                    students work on real-world projects, allowing them to apply
+                    their theoretical knowledge in practical settings.
+                  </p>
+                </div>
+                <div class="md-1">
+                  <h6>Focus on Innovation</h6>
+                  <p style="display: none">
+                    We encourage innovative thinking and creativity, fostering
+                    an environment where students can explore new ideas and
+                    methodologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
     </div>
     <!-- end Main content -->
 
@@ -1241,6 +1319,19 @@
         .addEventListener("click", function () {
           document.getElementById("courseList").classList.toggle("show");
         });
+    </script>
+    <script>
+      // Select all headings inside md-1 divs
+      const mdSections = document.querySelectorAll(".md-1 h6");
+
+      mdSections.forEach((heading) => {
+        heading.style.cursor = "pointer"; // show pointer on hover
+        heading.addEventListener("click", () => {
+          const paragraph = heading.nextElementSibling;
+          paragraph.style.display =
+            paragraph.style.display === "none" ? "block" : "none";
+        });
+      });
     </script>
     <!--===============================================================================================-->
     <script src="assets/libs/jquery/jquery-3.4.1.min3860.js?v=1"></script>

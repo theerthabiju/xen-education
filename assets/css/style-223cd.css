@@ -1327,13 +1327,59 @@ th {
   }
 }
 /* ----------------- */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .responsive-table thead {
+    display: none; /* hide table headers */
+  }
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex-basis: 40%;
+  }
+
+  .responsive-table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+/* ---- */
+
 
 .task-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+
   margin-top: 60px;
-  max-width: 500px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -1345,6 +1391,7 @@ th {
   background: #d1eaff;
   border-radius: 50px;
   padding: 15px 20px;
+  margin-bottom: 20px;
   color: #333;
   font-size: 16px;
   transition: all 0.3s ease;

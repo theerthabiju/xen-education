@@ -4091,9 +4091,19 @@ margin: 10px;
 /*[ pre-loading ]
 //////////////////////////////////////////////////////////////////*/
 
+.certificates-digital{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certificates-digital img{
+width: 150px;
+height: 150px;
+}
+.creative-section-certi{
+  margin-bottom: 150px;
 
-
-
+}
 
 
 

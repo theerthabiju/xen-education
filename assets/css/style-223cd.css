@@ -1496,8 +1496,8 @@ th {
 }
 .card-box {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -1540,6 +1540,7 @@ th {
   transform: translateY(-50%) rotate(45deg);
 }
 .bottom {
+ 
   bottom: -70px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
@@ -2840,7 +2841,7 @@ margin: 10px;
 }
 .wave-banner {
   position: relative;
-  background: linear-gradient(#00387a, #ffffff), url(../images/creative-bg.png);
+  background: linear-gradient(#00397afd, #ffffff4b), url(../images/creative-bg1.png);
   color: white;
   text-align: center;
   padding: 100px 30px 60px;
@@ -4144,7 +4145,7 @@ margin: 10px;
   justify-content: center;
 }
 .certificates-digital img{
-width: 150px;
+width: 250px;
 height: 150px;
 }
 .creative-section-certi{

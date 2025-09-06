@@ -2841,7 +2841,16 @@ margin: 10px;
 }
 .wave-banner {
   position: relative;
-  background: linear-gradient(#00397afd, #ffffff4b), url(../images/creative-bg1.png);
+  background: linear-gradient(#002b5c, #ffffff8e), url(../images/banners/banner.png);
+  color: white;
+  text-align: center;
+  padding: 100px 30px 60px;
+  overflow: hidden;
+  height: 100%;
+}
+.wave-banner-blog{
+   position: relative;
+  background: linear-gradient(#014899a1, #ffffff8e), url(../images/banners/blog-bg.png);
   color: white;
   text-align: center;
   padding: 100px 30px 60px;
@@ -2854,14 +2863,20 @@ margin: 10px;
   margin: 0;
   font-weight: bold;
 }
-
+.intro{
+  font-size: 26px;
+  font-weight: bold;
+  color: #00387a;
+}
 .wave-banner h4 {
   font-size: 22px;
   margin-top: 15px;
   font-weight: 400;
   color: #ddd;
 }
-
+.profile-img img{
+  border-radius: 50%;
+}
 .wave {
   position: absolute;
   bottom: 0;
@@ -2875,6 +2890,205 @@ margin: 10px;
   width: 100%;
   height: 100px;
 }
+
+
+/* ---------------- */
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+   
+    .blog-card {
+            text-align: center;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.blog-card:nth-child(1) { animation-delay: 0.2s; }
+.blog-card:nth-child(2) { animation-delay: 0.4s; }
+.blog-card:nth-child(3) { animation-delay: 0.6s; }
+.blog-card:nth-child(4) { animation-delay: 0.8s; }
+.blog-card:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.blog-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.5s ease; 
+}
+
+.blog-card img:hover {
+  transform: scale(1.1); 
+}
+
+    .blog-card h3 {
+      margin: 20px 0 10px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .blog-meta {
+      font-style: italic;
+      color: #00387a;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .blog-meta::before,
+    .blog-meta::after {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: #00387a;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+
+    .blog-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .read-more {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #00387a;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .blog-row{
+margin-bottom: 80px;
+
+    }
+    .blog-section{
+      margin-top: 150px;
+      margin-bottom: 150px;
+    }
+    
+/* ----------------- */
+  .contact-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 20px; /* space between email & phone */
+  }
+
+  .half-width {
+    flex: 1; /* equal width for email and phone */
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #00387a;
+    text-align: start;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #00387a;
+  }
+
+  .submit-btn {
+    background: #00387a;
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+  }
+
+  .submit-btn:hover {
+    background: #00387a;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column; /* stack email + phone on small screens */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .site-content .widget-area .widget .widget-title {
   font-weight: 700;

@@ -2876,6 +2876,7 @@ margin: 10px;
 }
 .profile-img img{
   border-radius: 50%;
+  width: 80px;
 }
 .wave {
   position: absolute;
@@ -3028,6 +3029,59 @@ margin-bottom: 80px;
   .half-width {
     flex: 1; /* equal width for email and phone */
   }
+.displayflexcontent{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.Conclusion-blog-d{
+  padding: 20px;
+  background-color: #b2c9e166;
+  text-align: center;
+}
+.line-row{
+  padding: 40px;
+  border-width: 50%;
+  border-left: 5px solid #00387a;
+}
+.line-row-2{
+  padding: 40px;
+  border-right: 5px solid #00387a;
+  
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 999; 
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.author-name {
+  cursor: pointer;
+  color: #00387a;
+}
+.author-name:hover {
+  text-decoration: underline;
+}
 
   .form-group label {
     display: block;

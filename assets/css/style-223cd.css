@@ -3042,11 +3042,14 @@ margin-bottom: 80px;
 .line-row{
   padding: 40px;
   border-width: 50%;
-  border-left: 5px solid #00387a;
+  border-left: 5px solid #fafafa66;
 }
 .line-row-2{
   padding: 40px;
-  border-right: 5px solid #00387a;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-right: 5px solid #9bc0e766;
+  background-color: #b2c9e166;
   
 }
 .modal {

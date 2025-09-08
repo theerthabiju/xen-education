@@ -382,69 +382,139 @@
       </nav>
       <!-- end Header -->
 
-       <section class="wave-banner-blog">
-     <div class="banner-content">
-      <div>
-   <p>
-            <a href="index.html" class="navigation" style="color: white"
-              >Home</a
-            >
-            |
-            <a href="blog.html" class="navigation-about" style="color: white"
-              >Blog</a
-            >
-          </p>
-          <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 15px">
-           Blogs
-          </h1>
-      </div>
-       
+      <section class="wave-banner-blog">
+        <div class="banner-content">
+          <div>
+            <p>
+              <a href="index.html" class="navigation" style="color: white"
+                >Home</a
+              >
+              |
+              <a href="blog.html" class="navigation-about" style="color: white"
+                >Blog</a
+              >
+            </p>
+            <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 15px">
+              Blogs
+            </h1>
+          </div>
         </div>
 
-  <!-- Wave Shape -->
-  <div class="wave">
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-      <path d="M0.00,49.98 C149.9,150.00 349.5,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
-            style="stroke: none; fill: #ffffff;"></path>
-    </svg>
-  </div>
-</section>
+        <!-- Wave Shape -->
+        <div class="wave">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path
+              d="M0.00,49.98 C149.9,150.00 349.5,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #ffffff"
+            ></path>
+          </svg>
+        </div>
+      </section>
 
       <!-- Main content -->
-<section class="contact-section">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <form class="contact-form" action="#" method="post">
+      <section class="contact-section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form class="contact-form" action="#" method="post">
+            <!-- Full Name (one row) -->
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Your Full Name"
+                required
+              />
+            </div>
+
+            <!-- Email + Phone (same row) -->
+            <div class="form-row">
+              <div class="form-group half-width">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group half-width">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter Your Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Message (one row) -->
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Enter Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <section class="location-section">
+        <div class="location">
+          <div class="loc-1">
+            <div style="text-align: center; padding: 40px">
+              <i class="bi bi-geo-alt"></i>
+              <p>Chulliyode Road, Sultan Bathery, Wayanad, Kerala 673592</p>
+            </div>
+          </div>
+
+          <div class="loc-1">
+            <div style="text-align: center; padding: 40px">
+              <i class="bi bi-envelope"></i>
+              <p>
+                <a href="mailto:admissions@xeneducation.in"
+                  >admissions@xeneducation.in</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="loc-1">
+            <div style="text-align: center; padding: 40px">
+              <i class="bi bi-telephone"></i>
+              <p>
+                <a href="tel:+916282437109">(+91) 6282 437 109</a><br />
+                <a href="tel:+917306463092">(+91) 7306 463 092</a><br />
+                <a href="tel:+919746905919">(+91) 9746 905 919</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section >
+        <div class="map">
+  <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62512.77687015581!2d76.22462386953121!3d11.690971483736371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba609e42a42757b%3A0x263394aa472163b9!2sXen%20Education!5e0!3m2!1sen!2sin!4v1757327620891!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        </div>
       
-      <!-- Full Name (one row) -->
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
-      </div>
-
-      <!-- Email + Phone (same row) -->
-      <div class="form-row">
-        <div class="form-group half-width">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-        </div>
-        <div class="form-group half-width">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" required>
-        </div>
-      </div>
-
-      <!-- Message (one row) -->
-      <div class="form-group">
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
-      </div>
-
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-  </div>
-</section>
- 
+      </section>
     </div>
     <!-- end Main content -->
 
@@ -628,8 +698,6 @@
       <i class="ion ion-ios-arrow-thin-up"></i>
     </div>
 
-    
-
     <script>
       document.querySelectorAll(".toggle").forEach((toggle) => {
         toggle.addEventListener("click", () => {
@@ -638,14 +706,6 @@
       });
     </script>
 
-    
-
-   
- 
-
-  
-
-    
     <!--===============================================================================================-->
     <script src="assets/libs/jquery/jquery-3.4.1.min3860.js?v=1"></script>
     <!--===============================================================================================-->

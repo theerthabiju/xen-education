@@ -2864,6 +2864,13 @@ th {
 }
 }
 
+.error-text {
+  color: rgb(172, 0, 0);
+  font-size: 14px;
+}
+.input-error {
+  border: 1px solid rgb(194, 0, 0);
+}
 .wave-banner-blog {
   position: relative;
   background: 
@@ -3030,8 +3037,7 @@ th {
 .location {
   display: flex;
   gap: 15px;
-  max-width: 1000px;
-  margin: auto;
+  justify-content: center;
 }
 
 .loc-1 {
@@ -3046,7 +3052,7 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 

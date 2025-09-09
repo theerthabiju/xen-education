@@ -70,6 +70,17 @@
     />
   </head>
   <style>
+     .error-text {
+      color: rgb(184, 0, 0);
+      font-size: 14px;
+      margin-top: 5px;
+      display: block;
+      text-align: start !important;
+    }
+
+    .input-error {
+      border: 1px solid rgb(182, 0, 0);
+    }
     .coureslist {
       display: none;
       list-style: none;
@@ -406,25 +417,25 @@
 <section class="contact-section">
     <div class="container">
       <h2>Contact Us</h2>
-      <form class="contact-form" >
+      <form class="contact-form" novalidate>
         <div class="form-group">
-          <label for="name">Full Name</label>
+          <label for="name" class="name-labal">Full Name</label>
           <input type="text" id="name" name="name" placeholder="Enter Your Full Name" />
         </div>
 
         <div class="form-row">
           <div class="form-group half-width">
-            <label for="email">Email Address</label>
+            <label for="email" class="name-labal">Email Address</label>
             <input type="email" id="email" name="email" placeholder="Enter Your Email" />
           </div>
           <div class="form-group half-width">
-            <label for="phone">Phone Number</label>
+            <label for="phone" class="name-labal">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" />
           </div>
         </div>
 
         <div class="form-group">
-          <label for="message">Your Message</label>
+          <label for="message" class="name-labal">Your Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
         </div>
 
@@ -707,7 +718,70 @@
     <div id="back-to-top" class="btn-back-to-top">
       <i class="ion ion-ios-arrow-thin-up"></i>
     </div>
+  
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery Validation Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".contact-form").validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 3
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          phone: {
+            required: true,
+            digits: true,
+            minlength: 10,
+            maxlength: 15
+          },
+          message: {
+            required: true,
+            minlength: 10
+          }
+        },
+        messages: {
+          name: {
+            required: "Please enter your full name",
+            minlength: "Name must be at least 3 characters long"
+          },
+          email: {
+            required: "Please enter your email address",
+            email: "Please enter a valid email address"
+          },
+          phone: {
+            required: "Please enter your phone number",
+            digits: "Only numbers are allowed",
+            minlength: "Phone number must be at least 10 digits",
+            maxlength: "Phone number must not exceed 15 digits"
+          },
+          message: {
+            required: "Please enter your message",
+            minlength: "Message must be at least 10 characters long"
+          }
+        },
+        errorClass: "error-text",
+        highlight: function (element) {
+          $(element).addClass("input-error");
+        },
+        unhighlight: function (element) {
+          $(element).removeClass("input-error");
+        },
+        submitHandler: function(form) {
+          alert("✅ Form submitted successfully (demo only).");
+          return false; 
+        }
+      });
+    });
+  </script>
     <script>
       document.querySelectorAll(".toggle").forEach((toggle) => {
         toggle.addEventListener("click", () => {
@@ -720,7 +794,7 @@
     
 
     <!--===============================================================================================-->
-    <script src="assets/libs/jquery/jquery-3.4.1.min3860.js?v=1"></script>
+    <!-- <script src="assets/libs/jquery/jquery-3.4.1.min3860.js?v=1"></script> -->
     <!--===============================================================================================-->
     <script src="assets/libs/bootstrap/popper3860.js?v=1"></script>
     <script src="assets/libs/bootstrap/bootstrap.min3860.js?v=1"></script>

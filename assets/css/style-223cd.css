@@ -1984,11 +1984,13 @@ th {
   padding: 20px;
 }
 .aboutsection {
-  margin-top: 140px;
-  margin-bottom: 60px;
-  background-image: url("../images/home/bg-png-01.png");
+   /* background-image: url("../images/home/buuter.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover; */
+  margin-top: 140px;
+  margin-bottom: 60px;
+  padding-bottom: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2841,25 +2843,38 @@ th {
 .wave-banner {
   position: relative;
   background: 
-    url(../images/banners/Blue\ Green\ Minimalist\ Summer\ Style\ Promotion\ Landscape\ Banner.png);
+    url(../images/banners/sub-bg.jpg);
   color: white;
   text-align: center;
   padding: 100px 30px 60px;
   overflow: hidden;
-  height: 100%;
+  height:700px;
   background-size: cover;
 }
+@media (max-width:1680px){
+  .wave-banner {
+  
+  background: 
+    url(../images/banners/sub-bg-course.png);
+  background-size: cover;
+}
+.wave-banner h1 {
+ color: #00356d;
+
+}
+}
+
 .wave-banner-blog {
   position: relative;
-  background: linear-gradient(#014899a1, #ffffff8e),
-    url(../images/banners/blog-bg.png);
+  background: 
+    url(../images/banners/sub-bg-course.png);
   color: white;
   text-align: center;
   padding: 100px 30px 60px;
   overflow: hidden;
-  height: 100%;
+  height:700px;
+  background-size: cover;
 }
-
 .wave-banner h1 {
   font-size: 52px;
   margin: 0;
@@ -15781,6 +15796,7 @@ th {
 
 /* study way  */
 .journey {
+   
   padding: 60px 20px;
   background: #f9fbff;
   text-align: center;

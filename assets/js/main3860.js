@@ -167,35 +167,44 @@
             $(window).on('scroll', function() {
                 var current = $(this).scrollTop();
 
-                if (current > startFixed) {
-                    $header.css('height', $header.outerHeight() + 'px');
+                // if (current > startFixed) {
+                //     $header.css('height', $header.outerHeight() + 'px');
 
-                    $header.addClass('fixed');
-                } else {
-                    $header.removeClass('fixed');
-                    setTimeout(function(){
-                        $header.css('height', 'auto');
-                    }, 200);
-                }
+                //     $header.addClass('fixed');
+                // } else {
+                //     $header.removeClass('fixed');
+                //     setTimeout(function(){
+                //         $header.css('height', 'auto');
+                //     }, 200);
+                // }
 
-                if (current > latestScroll && current > $elementToStick.outerHeight() + startFixed) {
-                    if (!$header.hasClass('menu-hidden')) {
-                        $header.addClass('menu-hidden');
-                        $elementToStick.css({
-                            top: - $elementToStick.outerHeight(),
-                        });
-                    }
-                } else {
-                    if ($header.hasClass('menu-hidden')) {
-                        $header.removeClass('menu-hidden');
-                        $elementToStick.css({
-                            top: dentalTop,
-                        });
-                    }
-                }
+                // if (current > latestScroll && current > $elementToStick.outerHeight() + startFixed) {
+                //     if (!$header.hasClass('menu-hidden')) {
+                //         $header.addClass('menu-hidden');
+                //         $elementToStick.css({
+                //             top: - $elementToStick.outerHeight(),
+                //         });
+                //     }
+                // } else {
+                //     if ($header.hasClass('menu-hidden')) {
+                //         $header.removeClass('menu-hidden');
+                //         $elementToStick.css({
+                //             top: dentalTop,
+                //         });
+                //     }
+                // }
 
                 latestScroll = current;
             });
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".site-header.layout-2");
+
+  if (window.scrollY > 10) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
             /*---------------------------------------------*/
             var $imgLogo = $('.site-header .header-logo img');
